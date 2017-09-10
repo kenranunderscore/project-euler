@@ -1,4 +1,4 @@
-def isPalindrome(n):
+def is_palindrome(n):
     s = str(n)
     return s == s[::-1]
 
@@ -7,7 +7,7 @@ def palindromes():
     for i in range(100, 999):
         for j in range(100, 999):
             product = i * j
-            if isPalindrome(product):
+            if is_palindrome(product):
                 result.append(product)
     return result
 

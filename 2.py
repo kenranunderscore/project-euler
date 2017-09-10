@@ -6,7 +6,7 @@ def fibonacci(n):
 n = 1
 sum = 0
 while True:
-    print(fib)
+    fib = fibonacci(n)
     if fib <= 4000000:
         if fib % 2 == 0:
             sum += fib

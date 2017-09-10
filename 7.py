@@ -1,4 +1,4 @@
-def isPrime(n):
+def is_prime(n):
     i = 2
     while i * i <= n:
         if n % i == 0:
@@ -9,7 +9,7 @@ def isPrime(n):
 primes = []
 n = 2
 while len(primes) <= 10001:
-    if isPrime(n):
+    if is_prime(n):
         primes.append(n)
     n += 1
 

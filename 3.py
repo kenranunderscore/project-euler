@@ -1,4 +1,4 @@
-def findLargestPrimeFactor(n):
+def find_largest_prime_factor(n):
     i = 2
     while i * i <= n:
         if n % i == 0:
@@ -7,4 +7,4 @@ def findLargestPrimeFactor(n):
             i += 1
     return n
 
-print(findLargestPrimeFactor(600851475143))
+print(find_largest_prime_factor(600851475143))
