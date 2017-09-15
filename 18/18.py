@@ -7,7 +7,7 @@ def maximum_total(rows):
     return rows[0][0]
 
 rows = []
-with open("data18") as f:
+with open("data") as f:
     for line in f:
         rows.append([int(x) for x in line.split()])
 
