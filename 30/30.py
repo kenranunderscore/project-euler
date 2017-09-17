@@ -1,6 +1,8 @@
+digit_powers = [x ** 5 for x in range(10)]
+
 def is_5th_power_sum(n):
-    s = sum([int(x) ** 5 for x in str(n)])
+    s = sum([digit_powers[int(x)] for x in str(n)])
     return s == n
 
-numbers = [n for n in range(10, 300001) if is_5th_power_sum(n)]
-print(sum(numbers))
+result = sum([n for n in range(10, 300001) if is_5th_power_sum(n)])
+print(result)
