@@ -21,6 +21,8 @@ def consecutive_primes(a, b):
 max_a, max_b, max_n = 0, 0, 0
 for a in range(-999, 1000):
     for b in range(-1000, 1001):
+        if not is_prime(b):
+            continue
         n = consecutive_primes(a, b)
         if n > max_n:
             max_a, max_b, max_n = a, b, n
