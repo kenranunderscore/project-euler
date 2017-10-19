@@ -1,6 +1,6 @@
-import time
+import timeit
 
-start_time = time.time()
+start_time = timeit.default_timer()
 
 def is_prime(n):
     if n <= 1:
@@ -31,4 +31,4 @@ print(max_b)
 print(max_n)
 print(max_a * max_b)
 
-print("Duration: {} ms".format(time.time() - start_time))
+print("Duration: {} seconds".format(timeit.default_timer() - start_time))
