@@ -1,6 +1,6 @@
-import time
+import timeit
 
-start_time = time.clock()
+start_time = timeit.default_timer()
 
 def fibonacci(n):
     a = 1
@@ -21,6 +21,6 @@ while True:
     else:
         break;
 
-duration = time.clock() - start_time
+duration = timeit.default_timer() - start_time
 
-print("The result is {} and was found in {} ms.".format(result, duration))
+print("The result is {0} and was found in {1:.5f} seconds.".format(result, duration))
