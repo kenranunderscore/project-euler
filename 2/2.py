@@ -3,9 +3,12 @@ import time
 start_time = time.clock()
 
 def fibonacci(n):
-    if n == 1 or n == 2:
-        return 1
-    return fibonacci(n - 1) + fibonacci(n - 2)
+    a = 1
+    b = 0
+    while n > 1:
+        a, b = a + b, a
+        n -= 1
+    return a
 
 n = 1
 result = 0
