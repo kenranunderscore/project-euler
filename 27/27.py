@@ -31,4 +31,4 @@ print(max_b)
 print(max_n)
 print(max_a * max_b)
 
-print("Duration: {} seconds".format(timeit.default_timer() - start_time))
+print("Duration: {0:.5f} seconds".format(timeit.default_timer() - start_time))
