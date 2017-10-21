@@ -1,6 +1,11 @@
+import timeit
+
+start_time = timeit.default_timer()
+
 def is_palindrome(n):
     s = str(n)
-    return s == s[::-1]
+    s_reversed = s[::-1]
+    return s == s_reversed
 
 def palindromes():
     result = []
@@ -11,4 +16,7 @@ def palindromes():
                 result.append(product)
     return result
 
-print(max(palindromes()))
+largest_palindrome = max(palindromes())
+duration = timeit.default_timer() - start_time
+msg = "Largest palindrome {0} found in {1:.5f} seconds."
+print(msg.format(largest_palindrome, duration))
